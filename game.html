@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="container" class="d-flex justify-content-center align-items-center p-3">
+        <div id="loader"> </div>
+        <div id="question-container" class=" d-none under-container bg-light rounded-3 shadow-lg p-4 m-2 d-flex flex-column   overflow-scroll">
+            
+                <div class="row">
+                    <div id="question" class=" col  p-2 ps-5  fw-bold fs-5 user-select-none">    
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3  pb-3 pt-3 gap-3">
+                        <div class="button-group  w-100 d-flex">
+                            <button class=" p-2 rounded-0 boreder-end choice-prefix"> A</button>
+                            <button class=" p-2 flex-grow-1 rounded-0 choice-text" data-number="1"></button>
+                        </div>
+                        
+                        <div class="button-group  w-100 d-flex">
+                            <button class=" p-2 rounded-0 boreder-end choice-prefix"> B</button>
+                            <button class=" p-2 flex-grow-1 rounded-0 choice-text" data-number="2"></button>
+                        </div>
+
+                        <div class="button-group  w-100 d-flex">
+                            <button class=" p-2 rounded-0 boreder-end choice-prefix"> C</button>
+                            <button class=" p-2 flex-grow-1 rounded-0 choice-text" data-number="3"></button>
+                        </div>
+
+                        <div class="button-group  w-100 d-flex">
+                            <button class=" p-2 rounded-0 boreder-end choice-prefix"> D</button>
+                            <button class=" p-2 flex-grow-1 rounded-0 choice-text" data-number="4"></button>
+                        </div>
+
+                </div>
+                <div class="row p-2 d-flex align-items-end border-top border-3 border-dark flex-grow-1">
+                    <div class="col d-flex justify-content-between flex-wrap  ">
+                        <!-- <a href="./game.html" id="next" class=" text-decoration-none btn btn-lg w-25 btn-success p-2 fw-semibold "> Next </a> -->
+
+                        <p class="fs-4 align-self-center fw-bold  text-center p-2">Question: <br> <span id="counter" class="text-blue "></span></p>
+                        
+                        <div class="text-center">
+                        <p class="fs-4 fw-bold  p-2">Score: <br><span id="score" class=" fw-bold ">0</span></p>
+                        </div>
+
+                    </div>
+                </div>   
+                
+        </div>
+    </div>
+
+
+
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous"></script>
+
+    <script src="game.js"></script>
+</body>
+</html>

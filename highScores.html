@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="container" class=" d-flex flex-column justify-content-center align-items-center p-3">
+        
+        <div id="instruction-container" class="under-container bg-light shadow-lg rounded-3 p-3 pb-0  d-flex flex-column overflow-scroll">
+        
+            <div class="row">
+                <div class="col  border-bottom border-3 border-dark p-2   fw-bold fs-3 text-center">
+                    Top <span class="text-blue">5</span> Scores
+                </div>
+            </div>
+            <table class="table table-striped " >
+                <thead class="text-blue">
+                    <th>User</th>
+                    <th>Score</th>
+                </thead>
+                <tbody id="scoresTable">
+
+                </tbody>
+            </table>    
+            <div class="row m-2">
+                <div class="col mx-auto text-center">
+                    <a href="./index.html" type="button" class="end-btn border-blue bg-light text-decoration-none text-blue p-3 rounded-3">Back Home </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous"></script>
+    <script src="highScores.js"></script>
+</body>
+</html>

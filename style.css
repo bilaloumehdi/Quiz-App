@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#container{
+    background-color: #ecf5ff;
+    width: 100vw;
+    height: 100vh;
+}
+.under-container{
+    width: 600px;
+    max-width: 70%;
+    min-width: 350px ;  
+    max-height: 900px ;
+}
+#start-btn,#score-btn{
+    /* border: 1px solid black; */
+    border-width: 2px; 
+}
+#start-btn:hover,#score-btn:hover{
+    opacity: .9;
+    transform: translateY(10px);
+    border-width: 4px;
+    transition: all 150ms;
+    border-color: #56a5eb;
+}
+
+
+.choice-prefix{
+    border: none;
+    background-color: #56a5eb;
+}
+.choice-prefix:hover{
+    background-color: #56a5eb;
+    opacity: .9;
+    color: white;
+}
+.choice-text {
+    background-color: #ecf5ff;
+    border: #56a5eb solid 2px;
+    opacity: .9;
+}
+.choice-text:hover {
+    border: #56a5eb 2px solid ;
+    opacity: 1;
+    /* transform: translateY(2px); */
+}
+.button-group:hover{
+    transform: translateY(2px);
+    transition: all 150ms;
+}
+
+
+.text-blue{
+    color: #56a5eb;
+}
+/* username */
+
+#username-input{
+    outline: none;
+    height: 30px;
+    padding: 20px;
+    border: #56a5eb 2px solid;
+}
+#username-input:focus{
+    border: #56a5eb 3px solid;   
+}
+.border-blue{
+    border: #56a5eb 2px solid ;
+}
+/* end Btn */
+.end-btn:hover{
+    border: #56a5eb 3px solid ;
+    color: #56a5eb;
+    transition: all 150ms;
+}
+/* loader */
+
+#loader{
+    width: 70px ;
+    max-width: 100px ;
+    border:white 5px solid ;
+    height: 70px;
+    max-height: 100px ;
+    border-top-color: #075a9f;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

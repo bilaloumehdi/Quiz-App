@@ -1,0 +1,11 @@
+{
+  "name": "quizapp",
+  "version": "1.0.0",
+  "description": "Quiz App (fetching question from an API )",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bilal",
+  "license": "ISC"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="container" class=" d-flex flex-column justify-content-center align-items-center p-3">
+            <div id="liveAlertPlaceholder" class="position-absolute top-0"></div>
+
+        <div id="instruction-container" class="under-container bg-light shadow-lg rounded-3 p-3 pb-0  d-flex flex-column overflow-scroll">
+            
+                <div class="row">
+                    <div class="col  border-bottom border-3 border-dark p-2   fw-bold fs-3 text-center">
+                    Final Score:<span id="finalScore" class=" fw-bold ">0</span>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col">
+                        <h1 id="resume" class="text-center fs-4 mt-3 fw-semibold "></h1>
+                        <form class="d-flex flex-column align-items-center gap-2 p-3 m-2" >
+                            <input type="text" name="username" placeholder="username" id="username-input" class="mb-2 p-4 w-50 w-50 rounded-3" required>
+                            <button type="submit" id="save" class="btn end-btn text-blue border-blue bg-light  mb-3 p-3 w-50 text-decoration-none shadow"> Save result</button>
+
+                        </form>  
+                        <div class="d-flex flex-column align-items-center gap-2 p-3 m-2">  
+                            <a href="./game.html" type="button" class="btn end-btn border-blue bg-light text-decoration-none text-blue p-3 w-50  shadow">Replay</a>
+                            <a href="./index.html" type="button" class="btn end-btn  border-blue bg-light text-decoration-none text-blue p-3 w-50 shadow "> Home 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>  
+                </div>
+                
+        </div>
+</div>
+    
+    <script src="end.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
