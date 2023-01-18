@@ -2,8 +2,9 @@
 let question =document.getElementById('question') ;
 let choices =Array.from(document.getElementsByClassName('choice-text')) ;
 let scoreFromDocument =document.getElementById('score') ;
-//    for printing how much questions left
-let count =document.getElementById('counter') ;
+
+//for printing how much questions left
+let count = document.getElementById('counter') ;
 
 let loader =document.getElementById('loader') ;
 let questionContainer =document.getElementById('question-container') ;
@@ -16,7 +17,7 @@ let avialableQuestions =[] ;
 let currentQuestion = {} ;
 let questionsCounter = 0 ;
 
-// make sure that every think is loaded then he will accapt to give the answer
+// make sure that every think is loaded then he will accept to give the answer
 let acceptingAnswers = false ;
 let score = 0 ;
 
@@ -89,9 +90,6 @@ function getNewQuestion () {
     const currentQuestionIndex = Math.floor(Math.random()*avialableQuestions.length) ;
     
     currentQuestion = avialableQuestions[currentQuestionIndex] ;
-
-    
-    
     question.innerHTML = currentQuestion.question ;
 
     
@@ -108,33 +106,24 @@ function getNewQuestion () {
     count.innerHTML = `${questionsCounter}/${MAX_QUESTIONS} ` ;
 }
 
-
-
-
 choices.forEach ((choice) => {
-
     choice.addEventListener('click',(e)=>{
 
-        
         if(!acceptingAnswers) return ;
 
         if(e.target.dataset.number == currentQuestion.answer){            
-            
-        
 
             e.target.classList.add('bg-success') ;
             acceptingAnswers = false ; 
 
-            // removing the red background
             setTimeout(() => {
                 e.target.classList.remove('bg-success') ;
                 
 
                 // how much question left
-                count.innerHTML = `${questionsCounter}/${MAX_QUESTIONS} ` ;
-                
-                    
+                count.innerHTML = `${questionsCounter}/${MAX_QUESTIONS} ` ;    
                 getNewQuestion() ;
+
             },1000) ;
             
             // Modify score
@@ -142,13 +131,11 @@ choices.forEach ((choice) => {
             scoreFromDocument.innerHTML = score ;
             scoreFromDocument.classList.add('text-blue') ;
             
-              // seting score into localStorage 
+            
             localStorage.setItem('mostRecentScore',score) ;
 
         }else{
-                // (e.target.dataset.number != currentQuestion.answer)
-
-                // adding the two backgrounds red and green
+                
                 e.target.classList.add('bg-danger') ;
                 choices[currentQuestion.answer -1].classList.add('bg-success')
                 acceptingAnswers = false ;
@@ -174,10 +161,4 @@ choices.forEach ((choice) => {
 })
 
 
-let next =document.getElementById('next') ;
-
-// next.addEventListener('click', (e) => {
-        
-//     e.preventDefault();
-// })
 

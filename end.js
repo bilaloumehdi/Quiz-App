@@ -1,4 +1,4 @@
-// import { score } from "./script";
+
 let username =document.getElementById('username-input');
 let save =document.getElementById('save') ;
 let finaleScore =document.getElementById('finalScore') ;
@@ -6,9 +6,6 @@ let resume =document.getElementById('resume') ;
 let mostRecentScore = localStorage.getItem('mostRecentScore') ;
 let highScores = JSON.parse(localStorage.getItem('scores'))|| [] ;
 
-
-
-    
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 
 
@@ -56,7 +53,7 @@ save.addEventListener('click', (e) => {
 finaleScore.innerHTML = mostRecentScore ;
 finaleScore.classList.add("text-blue" );
 
-// message that depence to the result 
+// message that depend  to the result 
 if(mostRecentScore == 0 ){
     resume.innerHTML = `You have lost ` ;
 }

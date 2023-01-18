@@ -17,8 +17,8 @@
     min-width: 350px ;  
     max-height: 900px ;
 }
+
 #start-btn,#score-btn{
-    /* border: 1px solid black; */
     border-width: 2px; 
 }
 #start-btn:hover,#score-btn:hover{
@@ -58,7 +58,6 @@
 .text-blue{
     color: #56a5eb;
 }
-/* username */
 
 #username-input{
     outline: none;
@@ -72,13 +71,11 @@
 .border-blue{
     border: #56a5eb 2px solid ;
 }
-/* end Btn */
 .end-btn:hover{
     border: #56a5eb 3px solid ;
     color: #56a5eb;
     transition: all 150ms;
 }
-/* loader */
 
 #loader{
     width: 70px ;
