@@ -11,6 +11,21 @@ you can also see the Top 5 high scores acheived in the game.
 - JavaScript
 - Bootstrap
 
-## ScreenShots
+
+## Screenshots
+### Home page
+![App Screenshot](https://github.com/Bilaloum/Quiz-App/blob/master/ScreenShots/Home.jpg?raw=true)
+
+### Questions page
+![App Screenshot](https://github.com/Bilaloum/Quiz-App/blob/master/ScreenShots/Questions.jpg?raw=true)
+
+### Result page
+![App Screenshot](https://github.com/Bilaloum/Quiz-App/blob/master/ScreenShots/Result.jpg?raw=true)
+
+### Top 5 scores page
+![App Screenshot](https://github.com/Bilaloum/Quiz-App/blob/master/ScreenShots/HighScores.jpg?raw=true)
+
+
+
 
 
