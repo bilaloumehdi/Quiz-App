@@ -1,6 +1,6 @@
 # Quiz-App
  ### Description
-A Quiz App that fetches data From trivia API .<br>
+A Quiz App that fetches questions about computer science from trivia API.<br>
 this application gives you 5 questions and 4 suggestions which have just one correct.<br>
 for each correct answer the score get incremented by 10.<br>
 at the end of the game you can either save the result or replay another game.<br>
